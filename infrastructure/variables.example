@@ -1,0 +1,17 @@
+# LOCAL VARIABLES #
+locals {
+  # PROVIDER CONFIG
+  aws_name_profile = "technical-test"
+  aws_region = "us-east-1"
+
+  # vpc variables 
+  vpc_cidr = "10.11.0.0/20"
+  vpc_public_subnet_01 = "10.11.0.0/23"
+  vpc_public_subnet_02 = "10.11.2.0/23"
+  vpc_private_subnet_01 = "10.11.8.0/23"
+  vpc_private_subnet_02 = "10.11.10.0/23"
+
+  # config vars
+  instance_name = "nginx-server"
+  instance_ami = "ami-05d788999cf92faa7"
+}
